@@ -240,24 +240,21 @@ grafica = new Chart(ctx, {
     },
 
     options: {
+    responsive: true,
+    maintainAspectRatio: false,
 
-        responsive: true,
-
-        plugins: {
-
-            title: {
-
-                display: true,
-
-                text:
-                "Optimización de Ganancias"
-
-            }
-
+    plugins: {
+        title: {
+            display: true,
+            text: "Optimización de Ganancias"
         }
+    },
 
+    scales: {
+        y: {
+            beginAtZero: false
+        }
     }
-
 });
 
 // ======================================
